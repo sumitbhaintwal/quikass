@@ -1,0 +1,75 @@
+<div class="container">
+	<div class="table">
+		<div class="row header">
+			<div class="primary">
+				<div class="col col-5 heading important">
+				First Name
+				</div>
+				<div class="col col-5 heading">
+					Last Name
+				</div>
+				<div class="col col-5 heading">
+					Age
+				</div>
+				<div class="col col-5 heading">
+					Sex
+				</div>
+				<div class="col col-5 heading">
+					Location
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row" ng-repeat="x in data">
+			<div class="primary">
+				<div class="col col-5 important" id=cell{{$index}} ng-click="showAll(x, $index)">
+				{{x.first_name}}
+				</div>
+				<div class="col col-5">
+					{{x.last_name}}
+				</div>
+				<div class="col col-5">
+					{{x.Age}}
+				</div>
+				<div class="col col-5">
+					{{x.Sex}}
+				</div>
+				<div class="col col-5">
+					{{x.Location}}
+				</div>
+			</div>
+			<div class="secondary" id={{$index}}>
+				<div class="table">
+					<div class="row header">
+						<div class="col heading">
+							Last Name
+						</div>
+						<div class="col">
+							{{last_name}}
+						</div>
+						<div class="col heading">
+							Age
+						</div>
+						<div class="col">
+							{{Age}}
+						</div>
+						<div class="col col-4 heading">
+							Sex
+						</div>
+						<div class="col col-4">
+							{{Sex}}
+						</div>
+						<div class="col col-4 heading">
+							Location
+						</div>
+						<div class="col col-4">
+							{{Location}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

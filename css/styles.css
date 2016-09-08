@@ -1,0 +1,75 @@
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100% !important; }
+    .container .active {
+      background-color: #388285;
+      border: none !important;
+      padding: 10px 0;
+      color: #fff; }
+    .container .table .row:hover {
+      background-color: #fff; }
+    .container .table .row .primary {
+      float: left;
+      width: 100%; }
+      .container .table .row .primary .col {
+        width: 100%; }
+        .container .table .row .primary .col:not(.important) {
+          display: none; }
+    .container .secondary {
+      background: #fff;
+      width: 100%; }
+      .container .secondary .col {
+        float: left;
+        height: 28px;
+        width: 50%; } }
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+html, body {
+  color: #666;
+  height: 100%;
+  width: 100%; }
+
+.container {
+  height: 100%;
+  margin: 15px auto;
+  width: 900px; }
+
+.secondary {
+  display: none; }
+
+.table {
+  float: left;
+  position: relative;
+  width: 100%; }
+  .table .row {
+    float: left;
+    width: 100%; }
+    .table .row:hover {
+      background-color: #ddd; }
+    .table .row .col {
+      border: 1px solid #ddd;
+      font-size: 12px;
+      padding: 5px 0;
+      text-align: center; }
+      .table .row .col:hover {
+        background-color: #388285;
+        border: 1px solid #388285;
+        color: #fff; }
+    .table .row .col-5 {
+      float: left;
+      width: 20%; }
+    .table .row .heading {
+      color: #333;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 0; }
+      .table .row .heading:hover {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        color: #333; }
+  .table .header:hover {
+    background-color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */
